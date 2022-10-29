@@ -40,7 +40,7 @@ export default {
     async deleteContact() {
       if (confirm("Bạn muốn xóa liên hệ này?")) {
         try {
-          await ContactService.delete(this.contact._id);
+          await ContactService.delete(this.contact._id); 
           this.$route.push({ name: "ContactBook" });
         } catch (error) {
           console.log(error);
